@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main dans la Main</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#4A90E2',
+              'brand-secondary': '#F5A623',
+              'brand-accent': '#7ED321',
+
+              // Light mode colors (for potential future use)
+              'light-bg': '#F0F4F8',
+              'light-surface': '#FFFFFF',
+              'light-surface-soft': '#F8F9FA',
+              'light-text-primary': '#27272A', // zinc-800
+              'light-text-secondary': '#6B7280',
+              'light-border': '#E5E7EB',
+
+              // Dark mode colors
+              'dark-bg': '#18181B', // zinc-900
+              'dark-surface': '#27272A', // zinc-800
+              'dark-surface-soft': '#3F3F46', // zinc-700
+              'dark-text-primary': '#F4F4F5', // zinc-100
+              'dark-text-secondary': '#A1A1AA', // zinc-400
+              'dark-border': '#52525B', // zinc-600
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "date-fns/": "https://aistudiocdn.com/date-fns@^4.1.0/",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dark-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

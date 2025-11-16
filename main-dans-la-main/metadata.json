@@ -1,0 +1,5 @@
+{
+  "name": "Main dans la Main",
+  "description": "An AI-powered application designed to serve as an emotional buffer and communication facilitator for couples. It helps translate daily frustrations into constructive, needs-based conversations using a Gemini-powered mediator.",
+  "requestFramePermissions": []
+}
