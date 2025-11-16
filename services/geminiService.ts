@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type, GenerateContentResponse } from "@google/genai";
-import { AITranslation, AnnoyanceDepthAnalysis, DeepIntrospectionAnalysis, ActionPlan } from '../types';
+import { AITranslation, AnnoyanceDepthAnalysis, DeepIntrospectionAnalysis, ActionPlan } from '../types.ts';
 
 const URGENT_KEYWORDS = ['rompre', 'addiction', 'casser', 'quitter', 'malade', 'drogue'];
 

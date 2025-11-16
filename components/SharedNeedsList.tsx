@@ -1,5 +1,5 @@
 import React from 'react';
-import { NeedCard, User } from '../types';
+import { NeedCard, User } from '../types.ts';
 import { format, parseISO } from 'date-fns';
 import { fr } from 'date-fns/locale';
 

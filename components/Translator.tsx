@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { generateDeepIntrospection, translateAnnoyance, analyzeAnnoyanceDepth, generateNeedTitle } from '../services/geminiService';
-import { User, NeedCard, AITranslation, AnnoyanceDepthAnalysis, DeepIntrospectionAnalysis, AnalysisSection } from '../types';
-import { SendIcon, SparklesIcon, BookOpenIcon, EmojiSadIcon, KeyIcon, LightBulbIcon, InformationCircleIcon, CheckCircleIcon, UserCircleIcon } from './icons';
+import { generateDeepIntrospection, translateAnnoyance, analyzeAnnoyanceDepth, generateNeedTitle } from '../services/geminiService.ts';
+import { User, NeedCard, AITranslation, AnnoyanceDepthAnalysis, DeepIntrospectionAnalysis, AnalysisSection } from '../types.ts';
+import { SendIcon, SparklesIcon, BookOpenIcon, EmojiSadIcon, KeyIcon, LightBulbIcon, InformationCircleIcon, CheckCircleIcon, UserCircleIcon } from './icons.tsx';
 
 interface TranslatorProps {
   currentUser: User;

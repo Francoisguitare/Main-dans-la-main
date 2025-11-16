@@ -11,7 +11,7 @@ import {
     enableIndexedDbPersistence,
     deleteDoc,
 } from 'firebase/firestore';
-import { NeedCard } from '../types';
+import { NeedCard } from '../types.ts';
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,

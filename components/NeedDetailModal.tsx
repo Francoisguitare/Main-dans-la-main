@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { NeedCard, User, ActionPlan } from '../types';
-import { SparklesIcon, CheckCircleIcon, TrashIcon } from './icons';
+import { NeedCard, User, ActionPlan } from '../types.ts';
+import { SparklesIcon, CheckCircleIcon, TrashIcon } from './icons.tsx';
 import { format, parseISO } from 'date-fns';
 import { fr } from 'date-fns/locale';
 

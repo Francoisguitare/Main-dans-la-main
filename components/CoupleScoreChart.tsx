@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { parseISO, format, subDays, isAfter, eachDayOfInterval } from 'date-fns';
 import { fr } from 'date-fns/locale';
 // FIX: Changed import path for ScoreHistoryEntry to types.ts
-import { ScoreHistoryEntry } from '../types';
+import { ScoreHistoryEntry } from '../types.ts';
 
 interface CoupleScoreChartProps {
     history: ScoreHistoryEntry[];

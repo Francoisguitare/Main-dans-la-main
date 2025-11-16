@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
-import { User, NeedCard, ActionPlan } from './types';
-import Dashboard from './components/Dashboard';
-import Translator from './components/Translator';
-import { HeartIcon, PlusCircleIcon, ChartBarIcon, KeyIcon, InformationCircleIcon } from './components/icons';
-import AboutModal from './components/AboutModal';
-import NeedDetailPage from './components/NeedDetailModal';
-import { onNeedsUpdate, addNeed, updateNeed, deleteNeed } from './services/firebaseService';
+import { User, NeedCard, ActionPlan } from './types.ts';
+import Dashboard from './components/Dashboard.tsx';
+import Translator from './components/Translator.tsx';
+import { HeartIcon, PlusCircleIcon, ChartBarIcon, KeyIcon, InformationCircleIcon } from './components/icons.tsx';
+import AboutModal from './components/AboutModal.tsx';
+import NeedDetailPage from './components/NeedDetailModal.tsx';
+import { onNeedsUpdate, addNeed, updateNeed, deleteNeed } from './services/firebaseService.ts';
 
 
 const App: React.FC = () => {

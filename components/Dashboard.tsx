@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { NeedCard, User, ActionPlan } from '../types';
+import { NeedCard, User, ActionPlan } from '../types.ts';
 import { format, parseISO, subWeeks, startOfWeek, endOfWeek, isWithinInterval, subMonths, startOfMonth, endOfMonth, addWeeks, addMonths, addDays, isPast } from 'date-fns';
 import { fr } from 'date-fns/locale';
-import { CheckCircleIcon, InformationCircleIcon, CalendarIcon, CheckIcon } from './icons';
+import { CheckCircleIcon, InformationCircleIcon, CalendarIcon, CheckIcon } from './icons.tsx';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const generateUUID = () => {
