@@ -1,7 +1,27 @@
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #18181b; /* bg-zinc-900 */
+    color: #f4f4f5; /* text-zinc-100 */
 }
 
 .hidden {
     display: none !important;
+}
+
+/* Animations simples pour une meilleure UX */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.prose {
+    line-height: 1.6;
+}
+
+.prose p {
+    margin-bottom: 1em;
 }
